@@ -1,0 +1,48 @@
+import java.util.Scanner;
+public class prime{
+int[] arr = new int[];
+public static int isPrime(int n1, int n2){
+diff = Math.abs(n1 - n2);
+int[] arr = new int[diff];
+int[] primeNum = new int[diff];
+int prime;
+if(n1>n2){
+for(int i = 0; i<diff; i++){
+arr[i] = i;
+}
+for(int j = 0; j<diff; j++){
+if(j == 0 || j==1){
+return 1;
+}
+if(arr[j]%j == 0){
+System.out.println("Number" + arr[i] + "is not prime");
+}else{
+prime[j] = arr[j];
+}
+}else{
+for(int i = 0; i<diff; i++){
+arr[i] = i;
+}
+for(int j = 0; j<diff; j++){ 
+if(j == 0 || j==1){
+return 1;
+}
+if(arr[j]%j == 0){
+System.out.println("Number" + arr[i] + "is not prime");
+}else{
+prime[j] = arr[j];
+}
+
+}
+}
+}
+public class day12{
+public static void main(String[] args){
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter Start: ");
+int num1 = sc.nextInt();
+System.out.println("Enter End: ");
+int num2 = sc.nextInt();
+
+}
+}
